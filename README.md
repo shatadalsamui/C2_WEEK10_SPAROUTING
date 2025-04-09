@@ -1,12 +1,40 @@
-# React + Vite
+# NEET Programs SPA with React Router
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project demonstrates single-page application routing using React Router DOM for a NEET coaching platform.
 
-Currently, two official plugins are available:
+## Key Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Client-side Routing**: Navigation without page reloads
+- **Three Views**:
+  - Landing page
+  - Class 11 NEET programs
+  - Class 12 NEET programs
+- **Programmatic Navigation**: `useNavigate()` hook example
 
-## Expanding the ESLint configuration
+## Routing Implementation
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. **Route Configuration**: Set up in `App.jsx`
+2. **Navigation Methods**:
+   - Link components (declarative)
+   - `useNavigate()` hook (imperative)
+3. **Dynamic Routing**: Example with parameterized routes
+
+## How to Run
+
+1. Install dependencies:
+```bash
+npm install
+```
+
+2. Start development server:
+```bash
+npm run dev
+```
+
+3. Open [http://localhost:5173](http://localhost:5173)
+
+## Project Structure
+
+- `Landing`: Home/welcome page
+- `Class11Programs`: NEET curriculum for 11th grade
+- `Class12Programs`: NEET curriculum for 12th grade with back navigation
